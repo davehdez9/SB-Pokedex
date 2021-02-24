@@ -1,0 +1,23 @@
+.Card {
+    list-style: none;
+    padding: 40px;
+    background-color: gray;
+    color: whitesmoke;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.Card:hover{
+    animation: bounce 0.5s linear;
+}
+
+.Card-title {
+    text-transform: capitalize;
+    font-size: 32px;
+    margin-bottom: 0px;
+    font-weight: normal;
+}
+
+.Card-image {
+    height: 180px;
+}
