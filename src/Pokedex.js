@@ -7,4 +7,25 @@
  * https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png.
  */
 
- 
+import React from 'react'
+import Pokecard from './Pokecard'
+import './Pokedex.css'
+
+const Pokedex = (props) => {
+    return (
+        <div className="Container">
+            <h1>Pokedex</h1>
+            <div className="Pokedex">
+                {props.pokemons.map(p => (
+                    <Pokecard
+                    id={p.id}
+                    name={p.name}
+                    type={p.type}
+                    exp={p.base_experience}/>
+                ))}
+            </div>
+        </div>
+    )
+}
+
+export default Pokedex
